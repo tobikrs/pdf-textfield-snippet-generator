@@ -1,0 +1,3 @@
+
+    $pdf->SetXY(|x|, |y|+$y);
+    $pdf->write(0, "|text|");
