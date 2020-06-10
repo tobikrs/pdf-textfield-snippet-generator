@@ -1,6 +1,8 @@
 # PDF Placeholder Editor
 
-Mit hilfe des Editors [Xournal++](https://github.com/xournalpp/xournalpp) ist es möglich Textfelder über eine graphische Oberfläche auf einem PDF zu platzieren und PHP-Snippets daraus zu generieren.
+Mit hilfe des Editors [Xournal++](https://github.com/xournalpp/xournalpp) ist es möglich Textfelder über eine graphische Oberfläche auf einem PDF zu platzieren und Snippets daraus zu generieren.
+
+Ich benutzte dieses Projekt ursprünglich um mir das Einfügen von Texten (Platzhalter) in ein PDF in PHP mit der [Libary FPDF](http://fpdf.de/start.html) zu erleichtern. Durch das Ändern der `template.txt` und der ersten Zeile von `output` in `generator.py:30` ist aber die Generierung von anderen Sprachen einfach möglich.
 
 
 ## Requirements
