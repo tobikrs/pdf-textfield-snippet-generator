@@ -27,8 +27,9 @@ root = ET.parse('object_tree.xml').getroot()
 
 # Gererate Output
 
-output =    '''# Here is your generated code.
-            '''
+output =    '''<?php
+# Here is your generated snippet:
+'''
 
 for page in root.findall('page'):    
     for text in page.findall('layer/text'):
@@ -41,5 +42,5 @@ for page in root.findall('page'):
 
 # Create output file
 
-with open('output.txt', 'w') as f:
+with open('snippet.php', 'w') as f:
     f.write(output)

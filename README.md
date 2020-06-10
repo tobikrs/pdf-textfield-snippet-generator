@@ -21,7 +21,7 @@ Mit hilfe des Editors [Xournal++](https://github.com/xournalpp/xournalpp) ist es
 
 5. Generiere den PHP-Snippet durch Ausführen des Python-Scripts mit `python generator.py`.
 
-6. Schaue dir das Ergebnis im `output.txt` an. Falls du zu Frieden bist, füge es in deinen Sourcecode ein.
+6. Schaue dir das Ergebnis im `snippet.php` an. Falls du zu Frieden bist, füge es in deinen Sourcecode ein.
 
 7. Ggf. ist es notwendig die Koordinaten im Sourcecode nachzujustieren.
 
@@ -75,17 +75,18 @@ Beispiel:
 
 > This is were the magic happens...
 
-Dieses Script parst den Objekte-Baum der Xournal++-Datei, liest den Text und die Koordinaten der Text-Felder aus und speichert diese dem Template `template.txt` entsprechend in `output.txt`.
+Dieses Script parst den Objekte-Baum der Xournal++-Datei, liest den Text und die Koordinaten der Text-Felder aus und speichert diese dem Template `template.txt` entsprechend in `snippet.php`.
 
 
-### Snippet `output.txt`
+### Snippet `snippet.php`
 
 Hier findest du das generierte Snippet.
 
 Mal angenommen aus den oben gegeben Beispielen würde ein Snippet generiert werden, dann sehe es so aus:
 ```
-# Here is your generated code.
-            
+<?php
+# Here is your generated snippet:
+
     $pdf->SetXY(26.9, 61.5+$y);
     $pdf->write(0, "1. In a new window of Xournal++ click on 'File' > 'Open'.");
 
